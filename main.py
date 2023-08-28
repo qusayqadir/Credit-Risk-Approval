@@ -4,5 +4,4 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.linear_model import LinearRegression
 
-def main():
-    print('Hellow')
+data = pd.read_csv('Data-Set/cs-test.csv')
