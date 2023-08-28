@@ -1,5 +1,8 @@
-print("hello world")
-print("Huzaifa made this change")
-print('git is harder then acc project')
-print('finall git works, thank the lord')
-print('the autosave was the problem goddamn.')
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LinearRegression
+
+def main():
+    print('Hellow')
