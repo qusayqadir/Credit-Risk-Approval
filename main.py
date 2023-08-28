@@ -1,5 +1,3 @@
 print("hello world")
-print("Huzaifa made this")
-print("chciken")
-print('this is because u have the 16 inch not gonna cap')
-print('beef')
+print("Huzaifa made this change")
+print('git is harder then acc project') 
