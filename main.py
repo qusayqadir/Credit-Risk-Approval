@@ -22,3 +22,7 @@ def main():
 
 
 main()
+
+
+def hello_world():
+    print("hello world")
