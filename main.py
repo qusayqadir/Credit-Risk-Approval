@@ -102,6 +102,6 @@ def main():
     print(df)
 
 def logistic_regression():
-    predicators = ['Dependents', 'Education','Credit History', 'Total_Income', ]
+    predicators = ['Dependents', 'Education','Credit History', 'Total_Income' ]
 
 main()
