@@ -20,5 +20,8 @@ def main():
     print(clean_data["Credit_History"].value_counts())
     print(clean_data["Property_Area"].value_counts())
 
+def monkey():
+    print('monkey')
+
 
 main()
