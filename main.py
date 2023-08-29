@@ -2,13 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib as plt
 
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-from sklearn import preprocessing
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import KFold
 from sklearn.linear_model import LogisticRegression
-from sklearn.impute import KNNImputer
 
 
 def print_columns(df):
@@ -59,17 +53,17 @@ def clean_data(df):
     return df
 
 
-
 def main():
     cleaned_data = clean_data(pd.read_csv('Data-Set/train.csv'))
 
-
+    labels = cleaned_data["Loan_Status"]
+    training_data = cleaned_data.drop("Loan_Status", inplace=False, axis=1)
 
 
 
 def create_model(training_data, labels):
     log_regression = LogisticRegression()
     log_regression.fit(training_data, labels)
-    print('no more data science lets create a game')
+    return log_regression
 
 main()
