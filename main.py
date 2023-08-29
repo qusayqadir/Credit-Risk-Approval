@@ -56,14 +56,14 @@ def clean_data(df):
 def main():
     cleaned_data = clean_data(pd.read_csv('Data-Set/train.csv'))
 
-    labels = cleaned_data["Loan_Status"]
-    training_data = cleaned_data.drop("Loan_Status", inplace=False, axis=1)
+    y_train = cleaned_data["Loan_Status"]
+    x_train = cleaned_data.drop("Loan_Status", inplace=False, axis=1)
 
 
 
-def create_model(training_data, labels):
+def create_model(x_train, y_train):
     log_regression = LogisticRegression()
-    log_regression.fit(training_data, labels)
+    log_regression.fit(x_train, y_train)
     return log_regression
 
 main()
