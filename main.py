@@ -70,7 +70,6 @@ def main():
 def create_model(training_data, labels):
     log_regression = LogisticRegression()
     log_regression.fit(training_data, labels)
-
-
+    print('no more data science lets create a game')
 
 main()
