@@ -88,9 +88,20 @@ def main():
     df.drop("Property_Area", inplace=True, axis=1)
     df.drop("row_number", inplace=True, axis=1)
 
+ 
+    df['Rural'].replace(True, 1, inplace=True)
+    df['Rural'].replace(False, 0, inplace=True)
 
-    print()
-    print(df.isna().sum())
+    df['Semiurban'].replace(True, 1, inplace=True)
+    df['Semiurban'].replace(False, 0, inplace=True)
+
+    df['Urban'].replace(True, 1, inplace=True)
+    df['Urban'].replace(False, 0, inplace=True)
+
+    df['Total_Income'] = df['ApplicantIncome'] + df['CoapplicantIncome']
     print(df)
+
+def logistic_regression():
+    predicators = ['Dependents', 'Education','Credit History', 'Total_Income', ]
 
 main()
